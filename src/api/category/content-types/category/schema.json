@@ -18,18 +18,19 @@
     "description": {
       "type": "text"
     },
-    "category_id": {
+    "taxonomy_term_id": {
       "type": "string"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "featured": {
       "type": "boolean"

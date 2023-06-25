@@ -4,7 +4,8 @@
   "info": {
     "singularName": "content-type",
     "pluralName": "content-types",
-    "displayName": "Content type"
+    "displayName": "Content type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,7 +18,7 @@
     "description": {
       "type": "text"
     },
-    "content_type_id": {
+    "taxonomy_term_id": {
       "type": "string"
     }
   }
