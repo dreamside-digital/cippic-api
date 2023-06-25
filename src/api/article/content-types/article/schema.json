@@ -59,6 +59,9 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "featured": {
+      "type": "boolean"
     }
   }
 }
