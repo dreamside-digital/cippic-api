@@ -34,6 +34,9 @@
     },
     "featured": {
       "type": "boolean"
+    },
+    "path": {
+      "type": "string"
     }
   }
 }
