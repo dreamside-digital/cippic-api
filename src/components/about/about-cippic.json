@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_about_about_cippics",
+  "info": {
+    "displayName": "About CIPPIC",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}

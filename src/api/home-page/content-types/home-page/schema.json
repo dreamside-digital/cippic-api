@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home-page",
     "pluralName": "home-pages",
-    "displayName": "Home page"
+    "displayName": "Home page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -43,6 +44,18 @@
     },
     "get_involved_section_before_title": {
       "type": "string"
+    },
+    "about_cippic": {
+      "displayName": "About CIPPIC",
+      "type": "component",
+      "repeatable": true,
+      "component": "about.about-cippic"
+    },
+    "cta_tabs": {
+      "displayName": "CTA",
+      "type": "component",
+      "repeatable": true,
+      "component": "tabs.cta"
     }
   }
 }
