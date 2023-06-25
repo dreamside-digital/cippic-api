@@ -1,0 +1,62 @@
+{
+  "kind": "singleType",
+  "collectionName": "organization_informations",
+  "info": {
+    "singularName": "organization-information",
+    "pluralName": "organization-informations",
+    "displayName": "Organization information"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "mailing_address": {
+      "type": "richtext"
+    },
+    "location": {
+      "type": "richtext"
+    },
+    "license": {
+      "type": "richtext"
+    },
+    "uottawa_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
