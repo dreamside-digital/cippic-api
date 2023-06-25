@@ -21,9 +21,6 @@
     "about_section_before_title": {
       "type": "string"
     },
-    "team_members": {
-      "type": "string"
-    },
     "team_section_title": {
       "type": "string"
     },
