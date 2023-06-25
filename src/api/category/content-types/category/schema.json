@@ -32,6 +32,12 @@
     },
     "featured": {
       "type": "boolean"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "categories"
     }
   }
 }
