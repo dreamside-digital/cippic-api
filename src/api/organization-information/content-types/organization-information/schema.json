@@ -119,6 +119,14 @@
           "localized": true
         }
       }
+    },
+    "fax": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
