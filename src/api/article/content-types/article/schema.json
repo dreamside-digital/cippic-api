@@ -111,6 +111,14 @@
           "localized": true
         }
       }
+    },
+    "homepage_spotlight": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean"
     }
   }
 }
