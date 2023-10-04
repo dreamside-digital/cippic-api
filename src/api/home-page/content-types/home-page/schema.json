@@ -197,6 +197,17 @@
         }
       },
       "type": "string"
+    },
+    "students_pages": {
+      "displayName": "List of links",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home.list-of-links"
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_home_list_of_links",
+  "info": {
+    "displayName": "List of links",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "link_text": {
+      "type": "string"
+    },
+    "link_path": {
+      "type": "string"
+    }
+  }
+}
