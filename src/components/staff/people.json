@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_staff_people",
+  "info": {
+    "displayName": "people",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "website": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}
