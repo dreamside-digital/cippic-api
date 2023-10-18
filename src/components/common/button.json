@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_buttons",
+  "info": {
+    "displayName": "Button",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "button_text": {
+      "type": "string"
+    },
+    "button_link": {
+      "type": "string"
+    }
+  }
+}
