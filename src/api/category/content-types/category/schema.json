@@ -64,12 +64,6 @@
         }
       }
     },
-    "articles": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::article.article",
-      "mappedBy": "categories"
-    },
     "slug": {
       "type": "uid",
       "targetField": "name"

@@ -40,12 +40,6 @@
         }
       }
     },
-    "articles": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::article.article",
-      "mappedBy": "content_types"
-    },
     "slug": {
       "type": "uid",
       "targetField": "name"
