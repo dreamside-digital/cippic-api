@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_accordions",
+  "info": {
+    "displayName": "Accordion",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "richtext"
+    }
+  }
+}

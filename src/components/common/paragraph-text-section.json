@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_common_paragraph_text_sections",
+  "info": {
+    "displayName": "Paragraph text section",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "before_title": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

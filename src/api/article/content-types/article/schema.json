@@ -65,14 +65,15 @@
       "type": "string"
     },
     "main_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -108,7 +109,7 @@
       "type": "uid",
       "targetField": "title"
     },
-    "featured": {
+    "featured_insights": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -116,13 +117,28 @@
       },
       "type": "boolean"
     },
-    "homepage_spotlight": {
+    "featured_story": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
       "type": "boolean"
+    },
+    "dynamic_content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "common.paragraph-text-section",
+        "common.image-slider",
+        "common.accordion",
+        "common.faq-section",
+        "common.highlight-section"
+      ]
     }
   }
 }
