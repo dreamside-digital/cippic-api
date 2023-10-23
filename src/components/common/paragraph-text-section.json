@@ -2,7 +2,8 @@
   "collectionName": "components_common_paragraph_text_sections",
   "info": {
     "displayName": "Paragraph text section",
-    "icon": "layer"
+    "icon": "layer",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,6 +18,13 @@
     },
     "body": {
       "type": "richtext"
+    },
+    "background_colour": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ]
     }
   }
 }

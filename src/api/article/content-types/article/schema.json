@@ -135,7 +135,6 @@
       "components": [
         "common.paragraph-text-section",
         "common.image-slider",
-        "common.accordion",
         "common.faq-section",
         "common.highlight-section"
       ]

@@ -17,6 +17,16 @@
         "videos",
         "audios"
       ]
+    },
+    "slides_per_view": {
+      "type": "integer"
+    },
+    "background_colour": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ]
     }
   }
 }
