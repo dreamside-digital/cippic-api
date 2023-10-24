@@ -28,6 +28,9 @@
     },
     "section_id": {
       "type": "string"
+    },
+    "icon_class": {
+      "type": "string"
     }
   }
 }
