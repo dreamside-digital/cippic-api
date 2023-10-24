@@ -21,7 +21,8 @@
       "enum": [
         "light",
         "dark"
-      ]
+      ],
+      "default": "light"
     }
   }
 }
