@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_common_program_sections",
+  "info": {
+    "displayName": "Program Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "how_to_apply_title": {
+      "type": "string"
+    },
+    "how_to_apply_description": {
+      "type": "richtext"
+    },
+    "apply_button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
+    }
+  }
+}

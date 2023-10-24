@@ -4,7 +4,8 @@
   "info": {
     "singularName": "students-page",
     "pluralName": "students-pages",
-    "displayName": "Students Page"
+    "displayName": "Students Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -48,6 +49,35 @@
         }
       },
       "component": "common.button"
+    },
+    "programs": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "donate.instruction-card"
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "student_programs": {
+      "displayName": "Program Section",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "common.program-section"
     }
   }
 }

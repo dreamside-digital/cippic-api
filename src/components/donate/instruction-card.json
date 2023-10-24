@@ -1,7 +1,8 @@
 {
   "collectionName": "components_donate_instruction_cards",
   "info": {
-    "displayName": "Instruction Card"
+    "displayName": "Instruction Card",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,13 +15,13 @@
     "icon_class": {
       "type": "string"
     },
-    "tag": {
-      "type": "string"
-    },
     "url": {
       "type": "string"
     },
     "link_text": {
+      "type": "string"
+    },
+    "tag": {
       "type": "string"
     }
   }
