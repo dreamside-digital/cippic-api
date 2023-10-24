@@ -79,7 +79,7 @@
       },
       "component": "common.program-section"
     },
-    "images": {
+    "image_slider": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
