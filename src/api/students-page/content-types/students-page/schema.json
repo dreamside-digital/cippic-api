@@ -50,16 +50,6 @@
       },
       "component": "common.button"
     },
-    "program_cards": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "donate.instruction-card"
-    },
     "description": {
       "pluginOptions": {
         "i18n": {

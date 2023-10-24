@@ -1,7 +1,8 @@
 {
   "collectionName": "components_common_program_sections",
   "info": {
-    "displayName": "Program Section"
+    "displayName": "Program Section",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -24,6 +25,9 @@
       "type": "component",
       "repeatable": false,
       "component": "common.button"
+    },
+    "section_id": {
+      "type": "string"
     }
   }
 }
