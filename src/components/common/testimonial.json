@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_testimonials",
+  "info": {
+    "displayName": "Testimonial"
+  },
+  "options": {},
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "date_published": {
+      "type": "date"
+    },
+    "quote": {
+      "type": "text"
+    },
+    "author_info": {
+      "type": "string"
+    }
+  }
+}

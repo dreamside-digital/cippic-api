@@ -78,6 +78,27 @@
         }
       },
       "component": "common.program-section"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "common.image-slider"
+    },
+    "testimonials": {
+      "displayName": "Testimonial",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "common.testimonial"
     }
   }
 }
