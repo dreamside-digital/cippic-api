@@ -50,7 +50,7 @@
       },
       "component": "common.button"
     },
-    "programs": {
+    "program_cards": {
       "type": "component",
       "repeatable": true,
       "pluginOptions": {
