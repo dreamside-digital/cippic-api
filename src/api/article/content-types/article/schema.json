@@ -80,14 +80,6 @@
         }
       }
     },
-    "teaser": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
-    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
@@ -138,6 +130,14 @@
         "common.faq-section",
         "common.highlight-section"
       ]
+    },
+    "teaser": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
     }
   }
 }
