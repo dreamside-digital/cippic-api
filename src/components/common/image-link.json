@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_common_image_links",
+  "info": {
+    "displayName": "Image link",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "link_path": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "alt_text": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "same window",
+        "new window"
+      ]
+    }
+  }
+}

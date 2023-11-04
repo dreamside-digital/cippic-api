@@ -112,6 +112,17 @@
           "localized": true
         }
       }
+    },
+    "footer_logo_links": {
+      "displayName": "Image link",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "common.image-link"
     }
   }
 }
