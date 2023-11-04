@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_common_seos",
+  "info": {
+    "displayName": "SEO"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 155
+    },
+    "share_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "robots_index": {
+      "type": "boolean"
+    },
+    "robots_follow": {
+      "type": "boolean"
+    }
+  }
+}

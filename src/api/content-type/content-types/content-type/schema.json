@@ -22,7 +22,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "description": {
       "type": "text",
@@ -42,7 +43,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "name"
+      "targetField": "name",
+      "required": true
     },
     "icon": {
       "type": "media",

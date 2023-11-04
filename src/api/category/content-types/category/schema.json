@@ -22,7 +22,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "description": {
       "type": "text",
@@ -66,22 +67,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "name"
-    },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "targetField": "name",
+      "required": true
     },
     "articles": {
       "type": "relation",

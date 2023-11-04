@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_common_contact_cards",
+  "info": {
+    "displayName": "Contact card"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "icon_class": {
+      "type": "string",
+      "default": "icon-star"
+    }
+  }
+}

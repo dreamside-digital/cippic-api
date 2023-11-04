@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_common_icon_buttons",
+  "info": {
+    "displayName": "Icon button",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "link_text": {
+      "type": "string"
+    },
+    "link_path": {
+      "type": "string"
+    },
+    "icon_class": {
+      "type": "string"
+    }
+  }
+}

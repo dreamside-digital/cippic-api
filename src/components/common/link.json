@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_common_links",
+  "info": {
+    "displayName": "Link",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link_text": {
+      "type": "string",
+      "required": true
+    },
+    "link_path": {
+      "type": "string",
+      "required": true
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "same window",
+        "new window"
+      ],
+      "default": "same window"
+    },
+    "icon_class": {
+      "type": "string"
+    }
+  }
+}

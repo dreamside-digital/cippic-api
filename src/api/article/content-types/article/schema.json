@@ -22,7 +22,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "author": {
       "pluginOptions": {
@@ -46,7 +47,8 @@
           "localized": true
         }
       },
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "node_id": {
       "pluginOptions": {
@@ -99,7 +101,8 @@
         }
       },
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "required": true
     },
     "featured_insights": {
       "pluginOptions": {
@@ -137,7 +140,17 @@
           "localized": true
         }
       },
-      "type": "text"
+      "type": "string"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "common.seo"
     }
   }
 }
