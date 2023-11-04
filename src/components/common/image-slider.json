@@ -25,6 +25,7 @@
       "type": "enumeration",
       "enum": [
         "light",
+        "medium",
         "dark"
       ],
       "default": "dark"

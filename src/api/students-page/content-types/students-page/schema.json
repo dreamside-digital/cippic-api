@@ -32,16 +32,6 @@
       },
       "type": "richtext"
     },
-    "cta_button": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "common.button"
-    },
     "description": {
       "pluginOptions": {
         "i18n": {
