@@ -134,14 +134,6 @@
         "common.highlight-section"
       ]
     },
-    "teaser": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
     "SEO": {
       "type": "component",
       "repeatable": false,
@@ -151,6 +143,14 @@
         }
       },
       "component": "common.seo"
+    },
+    "teaser": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
     }
   }
 }
