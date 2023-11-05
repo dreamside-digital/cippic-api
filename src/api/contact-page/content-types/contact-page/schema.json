@@ -62,6 +62,14 @@
         }
       },
       "component": "common.seo"
+    },
+    "land_acknowledgement_heading": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

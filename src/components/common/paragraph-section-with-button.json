@@ -23,7 +23,8 @@
         "light",
         "medium",
         "dark"
-      ]
+      ],
+      "default": "light"
     }
   }
 }
