@@ -31,6 +31,14 @@
     },
     "icon_class": {
       "type": "string"
+    },
+    "background_colour": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "medium",
+        "dark"
+      ]
     }
   }
 }
