@@ -7,14 +7,8 @@
   },
   "options": {},
   "attributes": {
-    "before_title": {
-      "type": "string"
-    },
     "title": {
       "type": "string"
-    },
-    "subtitle": {
-      "type": "text"
     },
     "FAQs": {
       "type": "component",
@@ -29,6 +23,9 @@
         "dark"
       ],
       "default": "dark"
+    },
+    "subtitle": {
+      "type": "richtext"
     }
   }
 }
