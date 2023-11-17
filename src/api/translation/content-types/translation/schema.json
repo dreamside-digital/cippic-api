@@ -122,6 +122,14 @@
       },
       "type": "string",
       "required": true
+    },
+    "all_work": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

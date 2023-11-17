@@ -7,9 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "before_title": {
-      "type": "string"
-    },
     "title": {
       "type": "string"
     },
