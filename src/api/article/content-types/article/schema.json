@@ -66,9 +66,9 @@
       },
       "type": "string"
     },
-    "images": {
+    "main_image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -151,6 +151,21 @@
         }
       },
       "type": "text"
+    },
+    "more_images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
