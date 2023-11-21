@@ -131,6 +131,14 @@
       },
       "type": "string",
       "required": true
+    },
+    "all_issues": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
