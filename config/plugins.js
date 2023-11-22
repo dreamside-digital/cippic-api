@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
           fuzzysortOptions: {
             characterLimit: 500,
             threshold: -1000,
-            limit: 15,
+            limit: 20,
             keys: [
               {
                 name: "title",
@@ -31,8 +31,8 @@ module.exports = ({ env }) => ({
           modelName: "category",
           fuzzysortOptions: {
             characterLimit: 500,
-            threshold: -1000,
-            limit: 15,
+            threshold: -500,
+            limit: 5,
             keys: [
               {
                 name: "name",
@@ -50,8 +50,8 @@ module.exports = ({ env }) => ({
           modelName: "content-type",
           fuzzysortOptions: {
             characterLimit: 500,
-            threshold: -1000,
-            limit: 15,
+            threshold: -500,
+            limit: 5,
             keys: [
               {
                 name: "name",
@@ -60,6 +60,114 @@ module.exports = ({ env }) => ({
               {
                 name: "description",
                 weight: -200,
+              },
+            ],
+          },
+        },
+        {
+          uid: "api::contact-page.contact-page",
+          modelName: "contact-page",
+          fuzzysortOptions: {
+            characterLimit: 500,
+            threshold: -500,
+            limit: 1,
+            keys: [
+              {
+                name: "title",
+                weight: 200,
+              },
+              {
+                name: "subtitle",
+                weight: 100,
+              },
+              {
+                name: "contact_options",
+                weight: 100,
+              },
+            ],
+          },
+        },
+        {
+          uid: "api::about-page.about-page",
+          modelName: "about-page",
+          fuzzysortOptions: {
+            characterLimit: 500,
+            threshold: -500,
+            limit: 1,
+            keys: [
+              {
+                name: "title",
+                weight: 200,
+              },
+              {
+                name: "subtitle",
+                weight: 100,
+              },
+              {
+                name: "team_members",
+                weight: 100,
+              },
+            ],
+          },
+        },
+        {
+          uid: "api::donate-page.donate-page",
+          modelName: "donate-page",
+          fuzzysortOptions: {
+            characterLimit: 500,
+            threshold: -500,
+            limit: 1,
+            keys: [
+              {
+                name: "title",
+                weight: 200,
+              },
+              {
+                name: "subtitle",
+                weight: 100,
+              },
+              {
+                name: "donation_sections",
+                weight: 100,
+              },
+              {
+                name: "instructions_title",
+                weight: 100,
+              },
+              {
+                name: "instructions_description",
+                weight: 100,
+              },
+              {
+                name: "how_to_donate",
+                weight: 100,
+              },
+            ],
+          },
+        },
+        {
+          uid: "api::students-page.students-page",
+          modelName: "students-page",
+          fuzzysortOptions: {
+            characterLimit: 500,
+            threshold: -500,
+            limit: 1,
+            keys: [
+              {
+                name: "title",
+                weight: 200,
+              },
+              {
+                name: "subtitle",
+                weight: 100,
+              },
+              {
+                name: "description",
+                weight: 100,
+              },
+              {
+                name: "student_programs",
+                weight: 100,
               },
             ],
           },
