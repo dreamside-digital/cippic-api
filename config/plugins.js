@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
           uid: "api::article.article",
           modelName: "article",
           fuzzysortOptions: {
-            characterLimit: 500,
+            characterLimit: 1000,
             threshold: -1000,
             limit: 20,
             keys: [
@@ -17,7 +17,7 @@ module.exports = ({ env }) => ({
               },
               {
                 name: "preview",
-                weight: -100,
+                weight: 200,
               },
               {
                 name: "body",
@@ -63,7 +63,75 @@ module.exports = ({ env }) => ({
               },
             ],
           },
-        }
+        },
+        {
+          uid: "api::students-page.students-page",
+          modelName: "students-page",
+          fuzzysortOptions: {
+            keys: [
+              {
+                name: "title",
+                weight: 500,
+              },
+              {
+                name: "subtitle",
+                weight: 200,
+              },
+              {
+                name: "description",
+                weight: -200,
+              }
+            ],
+          },
+        },
+        {
+          uid: "api::about-page.about-page",
+          modelName: "about-page",
+          fuzzysortOptions: {
+            keys: [
+              {
+                name: "title",
+                weight: 500,
+              },
+              {
+                name: "subtitle",
+                weight: -200,
+              }
+            ],
+          },
+        },
+        {
+          uid: "api::contact-page.contact-page",
+          modelName: "contact-page",
+          fuzzysortOptions: {
+            keys: [
+              {
+                name: "title",
+                weight: 500,
+              },
+              {
+                name: "subtitle",
+                weight: -200,
+              }
+            ],
+          },
+        },
+        {
+          uid: "api::donate-page.donate-page",
+          modelName: "donate-page",
+          fuzzysortOptions: {
+            keys: [
+              {
+                name: "title",
+                weight: 200,
+              },
+              {
+                name: "subtitle",
+                weight: -200,
+              }
+            ],
+          },
+        },
       ],
     },
   }
