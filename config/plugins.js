@@ -8,7 +8,7 @@ module.exports = ({ env }) => ({
           modelName: "article",
           fuzzysortOptions: {
             characterLimit: 1000,
-            threshold: -1000,
+            threshold: -2000,
             limit: 20,
             keys: [
               {
@@ -31,7 +31,7 @@ module.exports = ({ env }) => ({
           modelName: "category",
           fuzzysortOptions: {
             characterLimit: 500,
-            threshold: -500,
+            threshold: -1500,
             limit: 5,
             keys: [
               {
@@ -50,7 +50,7 @@ module.exports = ({ env }) => ({
           modelName: "content-type",
           fuzzysortOptions: {
             characterLimit: 500,
-            threshold: -500,
+            threshold: -1500,
             limit: 5,
             keys: [
               {
@@ -68,6 +68,8 @@ module.exports = ({ env }) => ({
           uid: "api::students-page.students-page",
           modelName: "students-page",
           fuzzysortOptions: {
+            threshold: -1000,
+            limit: 1,
             keys: [
               {
                 name: "title",
@@ -79,7 +81,7 @@ module.exports = ({ env }) => ({
               },
               {
                 name: "description",
-                weight: -200,
+                weight: 100,
               }
             ],
           },
@@ -88,14 +90,15 @@ module.exports = ({ env }) => ({
           uid: "api::about-page.about-page",
           modelName: "about-page",
           fuzzysortOptions: {
+            threshold: -1000,
             keys: [
               {
                 name: "title",
-                weight: 500,
+                weight: 400,
               },
               {
                 name: "subtitle",
-                weight: -200,
+                weight: 100,
               }
             ],
           },
@@ -104,14 +107,15 @@ module.exports = ({ env }) => ({
           uid: "api::contact-page.contact-page",
           modelName: "contact-page",
           fuzzysortOptions: {
+            threshold: -1000,
             keys: [
               {
                 name: "title",
-                weight: 500,
+                weight: 400,
               },
               {
                 name: "subtitle",
-                weight: -200,
+                weight: 100,
               }
             ],
           },
@@ -120,14 +124,15 @@ module.exports = ({ env }) => ({
           uid: "api::donate-page.donate-page",
           modelName: "donate-page",
           fuzzysortOptions: {
+            threshold: -1000,
             keys: [
               {
                 name: "title",
-                weight: 200,
+                weight: 400,
               },
               {
                 name: "subtitle",
-                weight: -200,
+                weight: 100,
               }
             ],
           },
