@@ -36,6 +36,21 @@ export interface CommonContactCard extends Schema.Component {
   };
 }
 
+export interface CommonContactOptions extends Schema.Component {
+  collectionName: 'components_common_contact_options';
+  info: {
+    displayName: 'Contact options';
+    icon: 'layer';
+  };
+  attributes: {
+    contact_cards: Attribute.Component<'common.contact-card', true>;
+    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']>;
+    section_id: Attribute.String;
+    title: Attribute.String;
+    subtitle: Attribute.Text;
+  };
+}
+
 export interface CommonFaqSection extends Schema.Component {
   collectionName: 'components_common_faq_sections';
   info: {
@@ -315,6 +330,7 @@ declare module '@strapi/types' {
       'common.accordion': CommonAccordion;
       'common.button': CommonButton;
       'common.contact-card': CommonContactCard;
+      'common.contact-options': CommonContactOptions;
       'common.faq-section': CommonFaqSection;
       'common.highlight-section': CommonHighlightSection;
       'common.icon-button': CommonIconButton;

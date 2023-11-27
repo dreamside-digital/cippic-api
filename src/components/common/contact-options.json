@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_common_contact_options",
+  "info": {
+    "displayName": "Contact options",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "contact_cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.contact-card"
+    },
+    "background_colour": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "medium",
+        "dark"
+      ]
+    },
+    "section_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  }
+}

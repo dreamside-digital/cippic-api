@@ -1480,7 +1480,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'common.paragraph-section-with-button',
         'common.paragraph-text-section',
         'common.team-section',
-        'common.text-with-image-lightbox'
+        'common.text-with-image-lightbox',
+        'common.contact-options'
       ]
     > &
       Attribute.SetPluginOptions<{
