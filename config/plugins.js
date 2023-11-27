@@ -65,78 +65,28 @@ module.exports = ({ env }) => ({
           },
         },
         {
-          uid: "api::students-page.students-page",
-          modelName: "students-page",
+          uid: "api::page.page",
+          modelName: "page",
           fuzzysortOptions: {
-            threshold: -1000,
-            limit: 1,
+            characterLimit: 1000,
+            threshold: -2000,
+            limit: 20,
             keys: [
               {
                 name: "title",
-                weight: 500,
+                weight: 300,
               },
               {
                 name: "subtitle",
                 weight: 200,
               },
               {
-                name: "description",
+                name: "body",
                 weight: 100,
-              }
-            ],
-          },
-        },
-        {
-          uid: "api::about-page.about-page",
-          modelName: "about-page",
-          fuzzysortOptions: {
-            threshold: -1000,
-            keys: [
-              {
-                name: "title",
-                weight: 400,
               },
-              {
-                name: "subtitle",
-                weight: 100,
-              }
             ],
           },
-        },
-        {
-          uid: "api::contact-page.contact-page",
-          modelName: "contact-page",
-          fuzzysortOptions: {
-            threshold: -1000,
-            keys: [
-              {
-                name: "title",
-                weight: 400,
-              },
-              {
-                name: "subtitle",
-                weight: 100,
-              }
-            ],
-          },
-        },
-        {
-          uid: "api::donate-page.donate-page",
-          modelName: "donate-page",
-          fuzzysortOptions: {
-            threshold: -1000,
-            keys: [
-              {
-                name: "title",
-                weight: 400,
-              },
-              {
-                name: "subtitle",
-                weight: 100,
-              }
-            ],
-          },
-        },
+        }
       ],
     },
   }
