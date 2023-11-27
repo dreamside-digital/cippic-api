@@ -49,6 +49,7 @@ export interface CommonFaqSection extends Schema.Component {
     background_colour: Attribute.Enumeration<['light', 'medium', 'dark']> &
       Attribute.DefaultTo<'dark'>;
     subtitle: Attribute.RichText;
+    section_id: Attribute.String;
   };
 }
 
@@ -65,6 +66,7 @@ export interface CommonHighlightSection extends Schema.Component {
     body: Attribute.RichText;
     background_colour: Attribute.Enumeration<['light', 'medium', 'dark']> &
       Attribute.DefaultTo<'light'>;
+    section_id: Attribute.String;
   };
 }
 
@@ -98,7 +100,7 @@ export interface CommonImageLink extends Schema.Component {
 export interface CommonImageSlider extends Schema.Component {
   collectionName: 'components_common_image_sliders';
   info: {
-    displayName: 'Image slider';
+    displayName: 'Image slider section';
     icon: 'layer';
     description: '';
   };
@@ -107,6 +109,10 @@ export interface CommonImageSlider extends Schema.Component {
     slides_per_view: Attribute.Integer;
     background_colour: Attribute.Enumeration<['light', 'medium', 'dark']> &
       Attribute.DefaultTo<'dark'>;
+    section_id: Attribute.String;
+    title: Attribute.String;
+    body: Attribute.RichText;
+    subtitle: Attribute.Text;
   };
 }
 
@@ -126,10 +132,39 @@ export interface CommonLink extends Schema.Component {
   };
 }
 
+export interface CommonNavigationCard extends Schema.Component {
+  collectionName: 'components_common_navigation_cards';
+  info: {
+    displayName: 'Navigation card';
+    icon: 'cursor';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    external_url: Attribute.String;
+    section_id: Attribute.String;
+    link_text: Attribute.String;
+  };
+}
+
+export interface CommonPageSectionNavigation extends Schema.Component {
+  collectionName: 'components_common_page_section_navigations';
+  info: {
+    displayName: 'Navigation cards';
+    icon: 'layer';
+    description: '';
+  };
+  attributes: {
+    navigation_card: Attribute.Component<'common.navigation-card', true>;
+    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']>;
+  };
+}
+
 export interface CommonParagraphSectionWithButton extends Schema.Component {
   collectionName: 'components_common_paragraph_section_with_buttons';
   info: {
-    displayName: 'Paragraph section with button';
+    displayName: 'Text section with button';
     description: '';
   };
   attributes: {
@@ -145,7 +180,7 @@ export interface CommonParagraphSectionWithButton extends Schema.Component {
 export interface CommonParagraphTextSection extends Schema.Component {
   collectionName: 'components_common_paragraph_text_sections';
   info: {
-    displayName: 'Paragraph text section';
+    displayName: 'Text section';
     icon: 'layer';
     description: '';
   };
@@ -155,6 +190,7 @@ export interface CommonParagraphTextSection extends Schema.Component {
     body: Attribute.RichText;
     background_colour: Attribute.Enumeration<['light', 'medium', 'dark']> &
       Attribute.DefaultTo<'light'>;
+    section_id: Attribute.String;
   };
 }
 
@@ -210,6 +246,22 @@ export interface CommonTestimonial extends Schema.Component {
   };
 }
 
+export interface CommonTextWithImageLightbox extends Schema.Component {
+  collectionName: 'components_common_text_with_image_lightboxes';
+  info: {
+    displayName: 'Text with image lightbox';
+    icon: 'layer';
+  };
+  attributes: {
+    title: Attribute.String;
+    subtitle: Attribute.Text;
+    body: Attribute.RichText;
+    images: Attribute.Media;
+    section_id: Attribute.String;
+    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']>;
+  };
+}
+
 export interface DonateInstructionCard extends Schema.Component {
   collectionName: 'components_donate_instruction_cards';
   info: {
@@ -254,11 +306,14 @@ declare module '@strapi/types' {
       'common.image-link': CommonImageLink;
       'common.image-slider': CommonImageSlider;
       'common.link': CommonLink;
+      'common.navigation-card': CommonNavigationCard;
+      'common.page-section-navigation': CommonPageSectionNavigation;
       'common.paragraph-section-with-button': CommonParagraphSectionWithButton;
       'common.paragraph-text-section': CommonParagraphTextSection;
       'common.program-section': CommonProgramSection;
       'common.seo': CommonSeo;
       'common.testimonial': CommonTestimonial;
+      'common.text-with-image-lightbox': CommonTextWithImageLightbox;
       'donate.instruction-card': DonateInstructionCard;
       'staff.people': StaffPeople;
     }

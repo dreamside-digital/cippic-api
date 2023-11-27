@@ -24,6 +24,9 @@
         "dark"
       ],
       "default": "light"
+    },
+    "section_id": {
+      "type": "string"
     }
   }
 }

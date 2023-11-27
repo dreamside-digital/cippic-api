@@ -26,6 +26,9 @@
     },
     "subtitle": {
       "type": "richtext"
+    },
+    "section_id": {
+      "type": "string"
     }
   }
 }

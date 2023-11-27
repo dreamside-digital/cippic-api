@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_common_text_with_image_lightboxes",
+  "info": {
+    "displayName": "Text with image lightbox",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "section_id": {
+      "type": "string"
+    },
+    "background_colour": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "medium",
+        "dark"
+      ]
+    }
+  }
+}

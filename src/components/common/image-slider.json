@@ -1,7 +1,7 @@
 {
   "collectionName": "components_common_image_sliders",
   "info": {
-    "displayName": "Image slider",
+    "displayName": "Image slider section",
     "icon": "layer",
     "description": ""
   },
@@ -29,6 +29,18 @@
         "dark"
       ],
       "default": "dark"
+    },
+    "section_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "subtitle": {
+      "type": "text"
     }
   }
 }

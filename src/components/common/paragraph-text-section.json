@@ -1,7 +1,7 @@
 {
   "collectionName": "components_common_paragraph_text_sections",
   "info": {
-    "displayName": "Paragraph text section",
+    "displayName": "Text section",
     "icon": "layer",
     "description": ""
   },
@@ -24,6 +24,9 @@
         "dark"
       ],
       "default": "light"
+    },
+    "section_id": {
+      "type": "string"
     }
   }
 }

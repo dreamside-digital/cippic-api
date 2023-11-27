@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_page_section_navigations",
+  "info": {
+    "displayName": "Navigation cards",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "navigation_card": {
+      "displayName": "Navigation card",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.navigation-card"
+    },
+    "background_colour": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "medium",
+        "dark"
+      ]
+    }
+  }
+}

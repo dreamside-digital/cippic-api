@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_common_navigation_cards",
+  "info": {
+    "displayName": "Navigation card",
+    "icon": "cursor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "external_url": {
+      "type": "string"
+    },
+    "section_id": {
+      "type": "string"
+    },
+    "link_text": {
+      "type": "string"
+    }
+  }
+}

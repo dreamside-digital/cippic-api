@@ -1473,13 +1473,12 @@ export interface ApiPagePage extends Schema.CollectionType {
       }>;
     page_sections: Attribute.DynamicZone<
       [
-        'common.paragraph-text-section',
-        'common.paragraph-section-with-button',
-        'common.highlight-section',
         'common.faq-section',
-        'common.image-slider',
-        'common.accordion',
-        'common.button'
+        'common.highlight-section',
+        'common.page-section-navigation',
+        'common.paragraph-section-with-button',
+        'common.paragraph-text-section',
+        'common.image-slider'
       ]
     > &
       Attribute.SetPluginOptions<{
