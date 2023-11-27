@@ -28,11 +28,12 @@ export interface CommonContactCard extends Schema.Component {
   collectionName: 'components_common_contact_cards';
   info: {
     displayName: 'Contact card';
+    description: '';
   };
   attributes: {
     label: Attribute.String;
     body: Attribute.RichText;
-    icon_class: Attribute.String & Attribute.DefaultTo<'icon-star'>;
+    icon_class: Attribute.String & Attribute.DefaultTo<'fa-solid fa-star'>;
   };
 }
 
@@ -206,6 +207,7 @@ export interface CommonParagraphTextSection extends Schema.Component {
     background_colour: Attribute.Enumeration<['light', 'medium', 'dark']> &
       Attribute.DefaultTo<'light'>;
     section_id: Attribute.String;
+    button: Attribute.Component<'common.button'>;
   };
 }
 

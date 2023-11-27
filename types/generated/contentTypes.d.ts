@@ -1477,7 +1477,6 @@ export interface ApiPagePage extends Schema.CollectionType {
         'common.highlight-section',
         'common.image-slider',
         'common.page-section-navigation',
-        'common.paragraph-section-with-button',
         'common.paragraph-text-section',
         'common.team-section',
         'common.text-with-image-lightbox',
@@ -1494,7 +1493,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         i18n: {
           localized: true;
         };
-      }>;
+      }> &
+      Attribute.DefaultTo<'dark'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

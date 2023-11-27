@@ -1,7 +1,8 @@
 {
   "collectionName": "components_common_contact_cards",
   "info": {
-    "displayName": "Contact card"
+    "displayName": "Contact card",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,7 +14,7 @@
     },
     "icon_class": {
       "type": "string",
-      "default": "icon-star"
+      "default": "fa-solid fa-star"
     }
   }
 }

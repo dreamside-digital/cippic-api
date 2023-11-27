@@ -93,7 +93,6 @@
         "common.highlight-section",
         "common.image-slider",
         "common.page-section-navigation",
-        "common.paragraph-section-with-button",
         "common.paragraph-text-section",
         "common.team-section",
         "common.text-with-image-lightbox",
@@ -110,7 +109,8 @@
       "enum": [
         "light",
         "dark"
-      ]
+      ],
+      "default": "dark"
     }
   }
 }
