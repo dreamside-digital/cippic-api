@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_common_team_sections",
+  "info": {
+    "displayName": "Team section",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "team_members": {
+      "type": "component",
+      "repeatable": true,
+      "component": "staff.people"
+    },
+    "background_colour": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "medium",
+        "dark"
+      ]
+    },
+    "section_id": {
+      "type": "string"
+    }
+  }
+}

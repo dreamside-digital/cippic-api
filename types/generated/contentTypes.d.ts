@@ -1475,10 +1475,12 @@ export interface ApiPagePage extends Schema.CollectionType {
       [
         'common.faq-section',
         'common.highlight-section',
+        'common.image-slider',
         'common.page-section-navigation',
         'common.paragraph-section-with-button',
         'common.paragraph-text-section',
-        'common.image-slider'
+        'common.team-section',
+        'common.text-with-image-lightbox'
       ]
     > &
       Attribute.SetPluginOptions<{

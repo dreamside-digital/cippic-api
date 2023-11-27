@@ -233,6 +233,21 @@ export interface CommonSeo extends Schema.Component {
   };
 }
 
+export interface CommonTeamSection extends Schema.Component {
+  collectionName: 'components_common_team_sections';
+  info: {
+    displayName: 'Team section';
+    icon: 'layer';
+  };
+  attributes: {
+    title: Attribute.String;
+    subtitle: Attribute.Text;
+    team_members: Attribute.Component<'staff.people', true>;
+    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']>;
+    section_id: Attribute.String;
+  };
+}
+
 export interface CommonTestimonial extends Schema.Component {
   collectionName: 'components_common_testimonials';
   info: {
@@ -312,6 +327,7 @@ declare module '@strapi/types' {
       'common.paragraph-text-section': CommonParagraphTextSection;
       'common.program-section': CommonProgramSection;
       'common.seo': CommonSeo;
+      'common.team-section': CommonTeamSection;
       'common.testimonial': CommonTestimonial;
       'common.text-with-image-lightbox': CommonTextWithImageLightbox;
       'donate.instruction-card': DonateInstructionCard;
