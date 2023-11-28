@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "navigation_card": {
+    "navigation_cards": {
       "displayName": "Navigation card",
       "type": "component",
       "repeatable": true,

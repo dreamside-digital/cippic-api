@@ -172,7 +172,7 @@ export interface CommonPageSectionNavigation extends Schema.Component {
     description: '';
   };
   attributes: {
-    navigation_card: Attribute.Component<'common.navigation-card', true>;
+    navigation_cards: Attribute.Component<'common.navigation-card', true>;
     background_colour: Attribute.Enumeration<['light', 'medium', 'dark']>;
   };
 }
