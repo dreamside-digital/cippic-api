@@ -16,6 +16,10 @@ module.exports = ({ env }) => ({
                 weight: 300,
               },
               {
+                name: "author",
+                weight: 300,
+              },
+              {
                 name: "preview",
                 weight: 200,
               },
@@ -40,7 +44,7 @@ module.exports = ({ env }) => ({
               },
               {
                 name: "description",
-                weight: -200,
+                weight: 100,
               },
             ],
           },
@@ -59,7 +63,7 @@ module.exports = ({ env }) => ({
               },
               {
                 name: "description",
-                weight: -200,
+                weight: 100,
               },
             ],
           },
@@ -69,8 +73,8 @@ module.exports = ({ env }) => ({
           modelName: "page",
           fuzzysortOptions: {
             characterLimit: 1000,
-            threshold: -2000,
-            limit: 20,
+            threshold: -2500,
+            limit: 5,
             keys: [
               {
                 name: "title",
