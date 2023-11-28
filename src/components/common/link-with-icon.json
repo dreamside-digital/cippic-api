@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_common_link_with_icons",
+  "info": {
+    "displayName": "Link with icon"
+  },
+  "options": {},
+  "attributes": {
+    "link_text": {
+      "type": "string"
+    },
+    "link_path": {
+      "type": "string"
+    },
+    "icon_class": {
+      "type": "string"
+    }
+  }
+}

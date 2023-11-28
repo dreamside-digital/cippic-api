@@ -141,6 +141,18 @@ export interface CommonImageSlider extends Schema.Component {
   };
 }
 
+export interface CommonLinkWithIcon extends Schema.Component {
+  collectionName: 'components_common_link_with_icons';
+  info: {
+    displayName: 'Link with icon';
+  };
+  attributes: {
+    link_text: Attribute.String;
+    link_path: Attribute.String;
+    icon_class: Attribute.String;
+  };
+}
+
 export interface CommonLink extends Schema.Component {
   collectionName: 'components_common_links';
   info: {
@@ -322,6 +334,7 @@ declare module '@strapi/types' {
       'common.icon-button': CommonIconButton;
       'common.image-link': CommonImageLink;
       'common.image-slider': CommonImageSlider;
+      'common.link-with-icon': CommonLinkWithIcon;
       'common.link': CommonLink;
       'common.navigation-card': CommonNavigationCard;
       'common.page-section-navigation': CommonPageSectionNavigation;

@@ -82,6 +82,25 @@
         }
       },
       "component": "common.seo"
+    },
+    "student_programs": {
+      "displayName": "Link with icon",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "common.link-with-icon"
+    },
+    "topics_section_title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
