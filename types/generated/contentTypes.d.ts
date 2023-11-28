@@ -1191,15 +1191,6 @@ export interface ApiDonatePageDonatePage extends Schema.SingleType {
           localized: true;
         };
       }>;
-    donation_sections: Attribute.Component<
-      'common.paragraph-section-with-button',
-      true
-    > &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     SEO: Attribute.Component<'common.seo'> &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1541,12 +1532,6 @@ export interface ApiStudentsPageStudentsPage extends Schema.SingleType {
         };
       }>;
     description: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    student_programs: Attribute.Component<'common.program-section', true> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

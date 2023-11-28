@@ -71,17 +71,6 @@
       },
       "component": "donate.instruction-card"
     },
-    "donation_sections": {
-      "displayName": "Paragraph section with button",
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "common.paragraph-section-with-button"
-    },
     "SEO": {
       "type": "component",
       "repeatable": false,

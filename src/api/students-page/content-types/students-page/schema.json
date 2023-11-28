@@ -40,17 +40,6 @@
       },
       "type": "richtext"
     },
-    "student_programs": {
-      "displayName": "Program Section",
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "common.program-section"
-    },
     "image_slider": {
       "type": "component",
       "repeatable": false,

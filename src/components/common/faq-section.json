@@ -20,7 +20,8 @@
       "enum": [
         "light",
         "medium",
-        "dark"
+        "dark",
+        "darkest"
       ],
       "default": "dark"
     },

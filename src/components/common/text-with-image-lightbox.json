@@ -2,7 +2,8 @@
   "collectionName": "components_common_text_with_image_lightboxes",
   "info": {
     "displayName": "Text with image lightbox",
-    "icon": "layer"
+    "icon": "layer",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,14 +17,15 @@
       "type": "richtext"
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "section_id": {
       "type": "string"
@@ -33,7 +35,8 @@
       "enum": [
         "light",
         "medium",
-        "dark"
+        "dark",
+        "darkest"
       ]
     }
   }

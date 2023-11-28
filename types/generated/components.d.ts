@@ -42,10 +42,13 @@ export interface CommonContactOptions extends Schema.Component {
   info: {
     displayName: 'Contact options';
     icon: 'layer';
+    description: '';
   };
   attributes: {
     contact_cards: Attribute.Component<'common.contact-card', true>;
-    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']>;
+    background_colour: Attribute.Enumeration<
+      ['light', 'medium', 'dark', 'darkest']
+    >;
     section_id: Attribute.String;
     title: Attribute.String;
     subtitle: Attribute.Text;
@@ -62,7 +65,9 @@ export interface CommonFaqSection extends Schema.Component {
   attributes: {
     title: Attribute.String;
     FAQs: Attribute.Component<'common.accordion', true>;
-    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']> &
+    background_colour: Attribute.Enumeration<
+      ['light', 'medium', 'dark', 'darkest']
+    > &
       Attribute.DefaultTo<'dark'>;
     subtitle: Attribute.RichText;
     section_id: Attribute.String;
@@ -80,7 +85,9 @@ export interface CommonHighlightSection extends Schema.Component {
     title: Attribute.String;
     subtitle: Attribute.Text;
     body: Attribute.RichText;
-    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']> &
+    background_colour: Attribute.Enumeration<
+      ['light', 'medium', 'dark', 'darkest']
+    > &
       Attribute.DefaultTo<'light'>;
     section_id: Attribute.String;
   };
@@ -123,7 +130,9 @@ export interface CommonImageSlider extends Schema.Component {
   attributes: {
     images: Attribute.Media;
     slides_per_view: Attribute.Integer;
-    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']> &
+    background_colour: Attribute.Enumeration<
+      ['light', 'medium', 'dark', 'darkest']
+    > &
       Attribute.DefaultTo<'dark'>;
     section_id: Attribute.String;
     title: Attribute.String;
@@ -173,23 +182,9 @@ export interface CommonPageSectionNavigation extends Schema.Component {
   };
   attributes: {
     navigation_cards: Attribute.Component<'common.navigation-card', true>;
-    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']>;
-  };
-}
-
-export interface CommonParagraphSectionWithButton extends Schema.Component {
-  collectionName: 'components_common_paragraph_section_with_buttons';
-  info: {
-    displayName: 'Text section with button';
-    description: '';
-  };
-  attributes: {
-    heading: Attribute.String;
-    body: Attribute.RichText;
-    cta_button: Attribute.Component<'common.button'>;
-    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']> &
-      Attribute.DefaultTo<'light'>;
-    section_id: Attribute.String;
+    background_colour: Attribute.Enumeration<
+      ['light', 'medium', 'dark', 'darkest']
+    >;
   };
 }
 
@@ -204,29 +199,12 @@ export interface CommonParagraphTextSection extends Schema.Component {
     title: Attribute.String;
     subtitle: Attribute.Text;
     body: Attribute.RichText;
-    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']> &
+    background_colour: Attribute.Enumeration<
+      ['light', 'medium', 'dark', 'darkest']
+    > &
       Attribute.DefaultTo<'light'>;
     section_id: Attribute.String;
     button: Attribute.Component<'common.button'>;
-  };
-}
-
-export interface CommonProgramSection extends Schema.Component {
-  collectionName: 'components_common_program_sections';
-  info: {
-    displayName: 'Program Section';
-    description: '';
-  };
-  attributes: {
-    title: Attribute.String;
-    subtitle: Attribute.Text;
-    description: Attribute.RichText;
-    how_to_apply_title: Attribute.String;
-    how_to_apply_description: Attribute.RichText;
-    apply_button: Attribute.Component<'common.button'>;
-    section_id: Attribute.String;
-    icon_class: Attribute.String;
-    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']>;
   };
 }
 
@@ -255,12 +233,15 @@ export interface CommonTeamSection extends Schema.Component {
   info: {
     displayName: 'Team section';
     icon: 'layer';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
     subtitle: Attribute.Text;
     team_members: Attribute.Component<'staff.people', true>;
-    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']>;
+    background_colour: Attribute.Enumeration<
+      ['light', 'medium', 'dark', 'darkest']
+    >;
     section_id: Attribute.String;
   };
 }
@@ -283,6 +264,7 @@ export interface CommonTextWithImageLightbox extends Schema.Component {
   info: {
     displayName: 'Text with image lightbox';
     icon: 'layer';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
@@ -290,7 +272,9 @@ export interface CommonTextWithImageLightbox extends Schema.Component {
     body: Attribute.RichText;
     images: Attribute.Media;
     section_id: Attribute.String;
-    background_colour: Attribute.Enumeration<['light', 'medium', 'dark']>;
+    background_colour: Attribute.Enumeration<
+      ['light', 'medium', 'dark', 'darkest']
+    >;
   };
 }
 
@@ -341,9 +325,7 @@ declare module '@strapi/types' {
       'common.link': CommonLink;
       'common.navigation-card': CommonNavigationCard;
       'common.page-section-navigation': CommonPageSectionNavigation;
-      'common.paragraph-section-with-button': CommonParagraphSectionWithButton;
       'common.paragraph-text-section': CommonParagraphTextSection;
-      'common.program-section': CommonProgramSection;
       'common.seo': CommonSeo;
       'common.team-section': CommonTeamSection;
       'common.testimonial': CommonTestimonial;
