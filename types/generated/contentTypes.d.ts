@@ -955,6 +955,12 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
       'manyToMany',
       'api::article.article'
     >;
+    header_image: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
