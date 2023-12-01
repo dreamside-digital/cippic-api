@@ -125,6 +125,22 @@
       "component": "common.image-link"
     },
     "uottawa_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "default_share_image": {
       "allowedTypes": [
         "images",
         "files",

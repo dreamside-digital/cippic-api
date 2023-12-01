@@ -1173,6 +1173,12 @@ export interface ApiLayoutLayout extends Schema.SingleType {
           localized: true;
         };
       }>;
+    default_share_image: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
