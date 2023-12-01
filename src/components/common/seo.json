@@ -1,7 +1,8 @@
 {
   "collectionName": "components_common_seos",
   "info": {
-    "displayName": "SEO"
+    "displayName": "SEO",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,20 +15,23 @@
       "maxLength": 155
     },
     "share_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "robots_index": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "robots_follow": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     }
   }
 }

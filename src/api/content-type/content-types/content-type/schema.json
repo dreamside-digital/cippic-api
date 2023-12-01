@@ -75,6 +75,16 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "content_types"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "common.seo"
     }
   }
 }

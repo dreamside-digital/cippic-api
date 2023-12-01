@@ -882,6 +882,12 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    SEO: Attribute.Component<'common.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -901,85 +907,6 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
       'api::category.category',
       'oneToMany',
       'api::category.category'
-    >;
-    locale: Attribute.String;
-  };
-}
-
-export interface ApiContactPageContactPage extends Schema.SingleType {
-  collectionName: 'contact_pages';
-  info: {
-    singularName: 'contact-page';
-    pluralName: 'contact-pages';
-    displayName: 'Contact page';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    land_acknowledgement: Attribute.RichText &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    subtitle: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    contact_options: Attribute.Component<'common.contact-card', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    SEO: Attribute.Component<'common.seo'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    land_acknowledgement_heading: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::contact-page.contact-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::contact-page.contact-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::contact-page.contact-page',
-      'oneToMany',
-      'api::contact-page.contact-page'
     >;
     locale: Attribute.String;
   };
@@ -1040,6 +967,12 @@ export interface ApiContentTypeContentType extends Schema.CollectionType {
       'manyToMany',
       'api::article.article'
     >;
+    SEO: Attribute.Component<'common.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1059,90 +992,6 @@ export interface ApiContentTypeContentType extends Schema.CollectionType {
       'api::content-type.content-type',
       'oneToMany',
       'api::content-type.content-type'
-    >;
-    locale: Attribute.String;
-  };
-}
-
-export interface ApiDonatePageDonatePage extends Schema.SingleType {
-  collectionName: 'donate_pages';
-  info: {
-    singularName: 'donate-page';
-    pluralName: 'donate-pages';
-    displayName: 'Donate page';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    subtitle: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    donate_button: Attribute.Component<'common.button'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    instructions_title: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    instructions_description: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    how_to_donate: Attribute.Component<'donate.instruction-card', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    SEO: Attribute.Component<'common.seo'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::donate-page.donate-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::donate-page.donate-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::donate-page.donate-page',
-      'oneToMany',
-      'api::donate-page.donate-page'
     >;
     locale: Attribute.String;
   };
@@ -1425,6 +1274,12 @@ export interface ApiPagePage extends Schema.CollectionType {
         };
       }> &
       Attribute.DefaultTo<'dark'>;
+    SEO: Attribute.Component<'common.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1436,83 +1291,6 @@ export interface ApiPagePage extends Schema.CollectionType {
       'api::page.page',
       'oneToMany',
       'api::page.page'
-    >;
-    locale: Attribute.String;
-  };
-}
-
-export interface ApiStudentsPageStudentsPage extends Schema.SingleType {
-  collectionName: 'students_pages';
-  info: {
-    singularName: 'students-page';
-    pluralName: 'students-pages';
-    displayName: 'Students Page';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    title: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    subtitle: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    description: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    image_slider: Attribute.Component<'common.image-slider'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    testimonials: Attribute.Component<'common.testimonial', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    SEO: Attribute.Component<'common.seo'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::students-page.students-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::students-page.students-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::students-page.students-page',
-      'oneToMany',
-      'api::students-page.students-page'
     >;
     locale: Attribute.String;
   };
@@ -1703,13 +1481,10 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::article.article': ApiArticleArticle;
       'api::category.category': ApiCategoryCategory;
-      'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::content-type.content-type': ApiContentTypeContentType;
-      'api::donate-page.donate-page': ApiDonatePageDonatePage;
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::layout.layout': ApiLayoutLayout;
       'api::page.page': ApiPagePage;
-      'api::students-page.students-page': ApiStudentsPageStudentsPage;
       'api::translation.translation': ApiTranslationTranslation;
     }
   }

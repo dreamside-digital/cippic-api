@@ -224,6 +224,7 @@ export interface CommonSeo extends Schema.Component {
   collectionName: 'components_common_seos';
   info: {
     displayName: 'SEO';
+    description: '';
   };
   attributes: {
     title: Attribute.String &
@@ -235,8 +236,8 @@ export interface CommonSeo extends Schema.Component {
         maxLength: 155;
       }>;
     share_image: Attribute.Media;
-    robots_index: Attribute.Boolean;
-    robots_follow: Attribute.Boolean;
+    robots_index: Attribute.Boolean & Attribute.DefaultTo<true>;
+    robots_follow: Attribute.Boolean & Attribute.DefaultTo<true>;
   };
 }
 
