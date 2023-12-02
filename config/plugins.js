@@ -73,7 +73,7 @@ module.exports = ({ env }) => ({
           modelName: "page",
           fuzzysortOptions: {
             characterLimit: 1000,
-            threshold: -2500,
+            threshold: -3000,
             limit: 5,
             keys: [
               {
@@ -82,7 +82,7 @@ module.exports = ({ env }) => ({
               },
               {
                 name: "subtitle",
-                weight: 200,
+                weight: 300,
               },
               {
                 name: "body",
