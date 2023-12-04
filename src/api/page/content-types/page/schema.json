@@ -24,14 +24,6 @@
       },
       "type": "string"
     },
-    "subtitle": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
-    },
     "slug": {
       "pluginOptions": {
         "i18n": {
@@ -121,6 +113,14 @@
         }
       },
       "component": "common.seo"
+    },
+    "subtitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
     }
   }
 }

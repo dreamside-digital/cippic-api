@@ -1230,12 +1230,6 @@ export interface ApiPagePage extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    subtitle: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     slug: Attribute.UID<'api::page.page', 'title'> &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1285,6 +1279,12 @@ export interface ApiPagePage extends Schema.CollectionType {
       }> &
       Attribute.DefaultTo<'dark'>;
     SEO: Attribute.Component<'common.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    subtitle: Attribute.Text &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
