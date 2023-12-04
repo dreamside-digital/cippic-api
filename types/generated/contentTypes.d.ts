@@ -769,10 +769,14 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       }>;
     dynamic_content: Attribute.DynamicZone<
       [
-        'common.paragraph-text-section',
-        'common.image-slider',
         'common.faq-section',
-        'common.highlight-section'
+        'common.highlight-section',
+        'common.image-slider',
+        'common.page-section-navigation',
+        'common.paragraph-text-section',
+        'common.team-section',
+        'common.text-with-image-lightbox',
+        'common.contact-options'
       ]
     > &
       Attribute.SetPluginOptions<{
