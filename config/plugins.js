@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
           uid: "api::article.article",
           modelName: "article",
           fuzzysortOptions: {
-            characterLimit: 4000,
+            characterLimit: 5000,
             threshold: -2000,
             limit: 20,
             keys: [
