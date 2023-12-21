@@ -13,7 +13,7 @@ module.exports = ({ env }) => ({
             keys: [
               {
                 name: "title",
-                weight: 400,
+                weight: 500,
               },
               {
                 name: "author",
@@ -21,11 +21,11 @@ module.exports = ({ env }) => ({
               },
               {
                 name: "preview",
-                weight: 300,
+                weight: 500,
               },
               {
                 name: "body",
-                weight: 200,
+                weight: 500,
               },
             ],
           },
