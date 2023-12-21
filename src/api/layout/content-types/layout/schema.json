@@ -113,17 +113,6 @@
         }
       }
     },
-    "footer_logo_links": {
-      "displayName": "Image link",
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "common.image-link"
-    },
     "uottawa_logo": {
       "type": "media",
       "multiple": false,
@@ -141,14 +130,15 @@
       }
     },
     "default_share_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true

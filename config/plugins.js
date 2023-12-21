@@ -3,33 +3,33 @@ module.exports = ({ env }) => ({
     enabled: true,
     config: {
       contentTypes: [
-        {
-          uid: "api::article.article",
-          modelName: "article",
-          fuzzysortOptions: {
-            characterLimit: 5000,
-            threshold: -2000,
-            limit: 20,
-            keys: [
-              {
-                name: "title",
-                weight: 500,
-              },
-              {
-                name: "author",
-                weight: 200,
-              },
-              {
-                name: "preview",
-                weight: 500,
-              },
-              {
-                name: "body",
-                weight: 500,
-              },
-            ],
-          },
-        },
+        // {
+        //   uid: "api::article.article",
+        //   modelName: "article",
+        //   fuzzysortOptions: {
+        //     characterLimit: 5000,
+        //     threshold: -2000,
+        //     limit: 20,
+        //     keys: [
+        //       {
+        //         name: "title",
+        //         weight: 500,
+        //       },
+        //       {
+        //         name: "author",
+        //         weight: 200,
+        //       },
+        //       {
+        //         name: "preview",
+        //         weight: 500,
+        //       },
+        //       {
+        //         name: "body",
+        //         weight: 500,
+        //       },
+        //     ],
+        //   },
+        // },
         {
           uid: "api::category.category",
           modelName: "category",

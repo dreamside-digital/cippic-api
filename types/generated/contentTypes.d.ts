@@ -1165,12 +1165,6 @@ export interface ApiLayoutLayout extends Schema.SingleType {
           localized: true;
         };
       }>;
-    footer_logo_links: Attribute.Component<'common.image-link', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     uottawa_logo: Attribute.Media &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1381,12 +1375,6 @@ export interface ApiTranslationTranslation extends Schema.SingleType {
       }>;
     related_articles: Attribute.String &
       Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    our: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
