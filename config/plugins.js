@@ -7,25 +7,25 @@ module.exports = ({ env }) => ({
           uid: "api::article.article",
           modelName: "article",
           fuzzysortOptions: {
-            characterLimit: 1000,
+            characterLimit: 2000,
             threshold: -2000,
             limit: 20,
             keys: [
               {
                 name: "title",
-                weight: 300,
+                weight: 400,
               },
               {
                 name: "author",
-                weight: 300,
-              },
-              {
-                name: "preview",
                 weight: 200,
               },
               {
+                name: "preview",
+                weight: 300,
+              },
+              {
                 name: "body",
-                weight: 100,
+                weight: 200,
               },
             ],
           },
@@ -72,13 +72,13 @@ module.exports = ({ env }) => ({
           uid: "api::page.page",
           modelName: "page",
           fuzzysortOptions: {
-            characterLimit: 1000,
+            characterLimit: 2000,
             threshold: -3000,
             limit: 5,
             keys: [
               {
                 name: "title",
-                weight: 300,
+                weight: 400,
               },
               {
                 name: "subtitle",
@@ -86,7 +86,7 @@ module.exports = ({ env }) => ({
               },
               {
                 name: "body",
-                weight: 100,
+                weight: 200,
               },
             ],
           },
