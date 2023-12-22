@@ -8,7 +8,7 @@ module.exports = ({ env }) => ({
           modelName: "article",
           fuzzysortOptions: {
             threshold: -2000,
-            limit: 20,
+            limit: 50,
             keys: [
               {
                 name: "title",
