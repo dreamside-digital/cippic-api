@@ -1437,6 +1437,12 @@ export interface ApiTranslationTranslation extends Schema.SingleType {
           localized: true;
         };
       }>;
+    page: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
