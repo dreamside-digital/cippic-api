@@ -714,7 +714,6 @@ export interface ApiArticleArticle extends Schema.CollectionType {
         };
       }>;
     body: Attribute.RichText &
-      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -797,6 +796,12 @@ export interface ApiArticleArticle extends Schema.CollectionType {
         };
       }>;
     more_images: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    body_alt: Attribute.Blocks &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
