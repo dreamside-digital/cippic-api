@@ -10,7 +10,7 @@ module.exports = {
   },
   async afterUpdate(event) {
     // set date_published to publishedAt if it is not otherwise defined
-    if (!event.params.data.date_published) {
+    if (!event.params.data.date_published && event.params.data.publishedAt) {
       const id = event.params.where.id
       const publishedAt = event.params.data.publishedAt
 
