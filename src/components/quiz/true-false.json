@@ -15,6 +15,9 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "explanation": {
+      "type": "blocks"
     }
   }
 }

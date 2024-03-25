@@ -364,6 +364,7 @@ export interface QuizTrueFalse extends Schema.Component {
     correct: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;
+    explanation: Attribute.Blocks;
   };
 }
 
