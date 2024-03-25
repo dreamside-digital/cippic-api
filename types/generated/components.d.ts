@@ -306,6 +306,67 @@ export interface DonateInstructionCard extends Schema.Component {
   };
 }
 
+export interface QuizChoices extends Schema.Component {
+  collectionName: 'components_quiz_choices';
+  info: {
+    displayName: 'choices';
+    icon: 'bulletList';
+    description: '';
+  };
+  attributes: {
+    label: Attribute.String & Attribute.Required;
+    value: Attribute.String & Attribute.Required;
+    correct: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
+  };
+}
+
+export interface QuizMultipleChoice extends Schema.Component {
+  collectionName: 'components_quiz_multiple_choices';
+  info: {
+    displayName: 'multiple choice';
+    icon: 'question';
+    description: '';
+  };
+  attributes: {
+    question_text: Attribute.Text & Attribute.Required;
+    multiple_select: Attribute.Boolean;
+    choice: Attribute.Component<'quiz.choices', true>;
+    explanation: Attribute.Blocks;
+  };
+}
+
+export interface QuizResults extends Schema.Component {
+  collectionName: 'components_quiz_results';
+  info: {
+    displayName: 'results';
+    icon: 'information';
+    description: '';
+  };
+  attributes: {
+    min_score: Attribute.Integer & Attribute.Required;
+    max_score: Attribute.Integer & Attribute.Required;
+    heading: Attribute.String & Attribute.Required;
+    explanation: Attribute.Blocks & Attribute.Required;
+  };
+}
+
+export interface QuizTrueFalse extends Schema.Component {
+  collectionName: 'components_quiz_true_falses';
+  info: {
+    displayName: 'True or false';
+    icon: 'question';
+    description: '';
+  };
+  attributes: {
+    question_text: Attribute.Text & Attribute.Required;
+    correct: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
+  };
+}
+
 export interface StaffPeople extends Schema.Component {
   collectionName: 'components_staff_people';
   info: {
@@ -345,6 +406,10 @@ declare module '@strapi/types' {
       'common.testimonial': CommonTestimonial;
       'common.text-with-image-lightbox': CommonTextWithImageLightbox;
       'donate.instruction-card': DonateInstructionCard;
+      'quiz.choices': QuizChoices;
+      'quiz.multiple-choice': QuizMultipleChoice;
+      'quiz.results': QuizResults;
+      'quiz.true-false': QuizTrueFalse;
       'staff.people': StaffPeople;
     }
   }

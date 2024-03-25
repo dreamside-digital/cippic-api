@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_quiz_results",
+  "info": {
+    "displayName": "results",
+    "icon": "information",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "min_score": {
+      "type": "integer",
+      "required": true
+    },
+    "max_score": {
+      "type": "integer",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "explanation": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

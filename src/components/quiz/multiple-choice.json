@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_quiz_multiple_choices",
+  "info": {
+    "displayName": "multiple choice",
+    "icon": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question_text": {
+      "type": "text",
+      "required": true
+    },
+    "multiple_select": {
+      "type": "boolean"
+    },
+    "choice": {
+      "displayName": "choices",
+      "type": "component",
+      "repeatable": true,
+      "component": "quiz.choices"
+    },
+    "explanation": {
+      "type": "blocks"
+    }
+  }
+}
