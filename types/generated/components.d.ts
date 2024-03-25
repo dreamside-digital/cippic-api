@@ -315,7 +315,7 @@ export interface QuizChoices extends Schema.Component {
   };
   attributes: {
     label: Attribute.String & Attribute.Required;
-    value: Attribute.String & Attribute.Required;
+    value: Attribute.String & Attribute.Required & Attribute.Unique;
     correct: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;

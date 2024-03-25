@@ -1435,6 +1435,11 @@ export interface ApiQuizQuiz extends Schema.CollectionType {
       ['quiz.multiple-choice', 'quiz.true-false']
     >;
     results: Attribute.Component<'quiz.results', true>;
+    slug: Attribute.UID<'api::quiz.quiz', 'title'>;
+    preview: Attribute.Text;
+    date_published: Attribute.DateTime;
+    author: Attribute.String;
+    SEO: Attribute.Component<'common.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
