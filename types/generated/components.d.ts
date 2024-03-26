@@ -334,6 +334,7 @@ export interface QuizMultipleChoice extends Schema.Component {
     multiple_select: Attribute.Boolean;
     choice: Attribute.Component<'quiz.choices', true>;
     explanation: Attribute.Blocks;
+    help_text: Attribute.String;
   };
 }
 
@@ -365,6 +366,7 @@ export interface QuizTrueFalse extends Schema.Component {
       Attribute.Required &
       Attribute.DefaultTo<false>;
     explanation: Attribute.Blocks;
+    help_text: Attribute.String;
   };
 }
 

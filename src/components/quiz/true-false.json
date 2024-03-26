@@ -18,6 +18,9 @@
     },
     "explanation": {
       "type": "blocks"
+    },
+    "help_text": {
+      "type": "string"
     }
   }
 }
