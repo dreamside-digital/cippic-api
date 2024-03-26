@@ -20,9 +20,6 @@
       "repeatable": true,
       "component": "quiz.choices"
     },
-    "explanation": {
-      "type": "blocks"
-    },
     "help_text": {
       "type": "string"
     },
