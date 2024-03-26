@@ -21,6 +21,9 @@
     },
     "help_text": {
       "type": "string"
+    },
+    "explanation_text": {
+      "type": "text"
     }
   }
 }
