@@ -1429,17 +1429,17 @@ export interface ApiQuizQuiz extends Schema.CollectionType {
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    description: Attribute.Blocks;
     main_image: Attribute.Media;
     questions: Attribute.DynamicZone<
       ['quiz.multiple-choice', 'quiz.true-false']
     >;
     results: Attribute.Component<'quiz.results', true>;
     slug: Attribute.UID<'api::quiz.quiz', 'title'>;
-    preview: Attribute.Text;
+    description: Attribute.Text;
     date_published: Attribute.DateTime;
     author: Attribute.String;
     SEO: Attribute.Component<'common.seo'>;
+    start_button: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

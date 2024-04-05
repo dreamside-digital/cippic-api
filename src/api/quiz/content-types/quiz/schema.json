@@ -16,9 +16,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "blocks"
-    },
     "main_image": {
       "type": "media",
       "multiple": false,
@@ -47,7 +44,7 @@
       "type": "uid",
       "targetField": "title"
     },
-    "preview": {
+    "description": {
       "type": "text"
     },
     "date_published": {
@@ -60,6 +57,9 @@
       "type": "component",
       "repeatable": false,
       "component": "common.seo"
+    },
+    "start_button": {
+      "type": "string"
     }
   }
 }
