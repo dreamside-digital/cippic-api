@@ -1427,19 +1427,70 @@ export interface ApiQuizQuiz extends Schema.CollectionType {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    title: Attribute.String & Attribute.Required;
-    main_image: Attribute.Media;
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    main_image: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     questions: Attribute.DynamicZone<
       ['quiz.multiple-choice', 'quiz.true-false']
-    >;
-    results: Attribute.Component<'quiz.results', true>;
+    > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    results: Attribute.Component<'quiz.results', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     slug: Attribute.UID<'api::quiz.quiz', 'title'>;
-    description: Attribute.Text;
-    date_published: Attribute.DateTime;
-    author: Attribute.String;
-    SEO: Attribute.Component<'common.seo'>;
-    start_button: Attribute.String;
+    description: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    date_published: Attribute.DateTime &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    author: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    SEO: Attribute.Component<'common.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    start_button: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1447,6 +1498,12 @@ export interface ApiQuizQuiz extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<'api::quiz.quiz', 'oneToOne', 'admin::user'> &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::quiz.quiz',
+      'oneToMany',
+      'api::quiz.quiz'
+    >;
+    locale: Attribute.String;
   };
 }
 
