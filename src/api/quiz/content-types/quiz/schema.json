@@ -118,7 +118,7 @@
       },
       "type": "string"
     },
-    "completed": {
+    "progress_bar_label": {
       "pluginOptions": {
         "i18n": {
           "localized": true

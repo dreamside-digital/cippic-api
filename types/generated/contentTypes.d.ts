@@ -1497,7 +1497,7 @@ export interface ApiQuizQuiz extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    completed: Attribute.String &
+    progress_bar_label: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
