@@ -9,16 +9,18 @@ module.exports = {
     })
   },
   async afterUpdate(event) {
-    // set date_published to publishedAt if it is not otherwise defined
-    if (!event.params.data.date_published && event.params.data.publishedAt) {
+    // run after article is published
+    if (event.params.data.publishedAt) {
       const id = event.params.where.id
-      const publishedAt = event.params.data.publishedAt
+
+      // if date_published is manually set, use that date; otherwise use the default publishedAt
+      let datePublished = event.params.data.date_published || event.params.data.publishedAt
 
       // insert directly into database to avoid entering an infinite loop
       const update = await strapi.db
         .connection("articles")
         .where({id: id})
-        .update({ date_published: publishedAt })
+        .update({ date_published: datePublished })
     }
   } 
 };
