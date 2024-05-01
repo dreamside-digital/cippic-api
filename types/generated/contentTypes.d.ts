@@ -1551,6 +1551,12 @@ export interface ApiQuizQuiz extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    your_answer: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
